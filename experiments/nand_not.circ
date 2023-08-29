@@ -53,15 +53,17 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(490,340)" to="(580,340)"/>
-    <wire from="(490,380)" to="(580,380)"/>
-    <wire from="(640,360)" to="(710,360)"/>
-    <wire from="(740,360)" to="(830,360)"/>
-    <comp lib="0" loc="(490,340)" name="Pin">
-      <a name="tristate" val="false"/>
+    <wire from="(540,340)" to="(580,340)"/>
+    <wire from="(540,380)" to="(580,380)"/>
+    <wire from="(690,360)" to="(810,360)"/>
+    <wire from="(640,360)" to="(660,360)"/>
+    <wire from="(410,360)" to="(430,360)"/>
+    <comp lib="0" loc="(540,380)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tunnel"/>
     </comp>
-    <comp lib="1" loc="(740,360)" name="NOT Gate"/>
-    <comp lib="0" loc="(830,360)" name="Pin">
+    <comp lib="1" loc="(690,360)" name="NOT Gate"/>
+    <comp lib="0" loc="(810,360)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="labelloc" val="east"/>
@@ -69,8 +71,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <comp lib="1" loc="(640,360)" name="NAND Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(490,380)" name="Pin">
-      <a name="tristate" val="false"/>
+    <comp lib="0" loc="(540,340)" name="Tunnel">
+      <a name="facing" val="east"/>
+      <a name="label" val="tunnel"/>
+    </comp>
+    <comp lib="0" loc="(410,360)" name="Clock"/>
+    <comp lib="0" loc="(430,360)" name="Tunnel">
+      <a name="label" val="tunnel"/>
     </comp>
   </circuit>
 </project>
